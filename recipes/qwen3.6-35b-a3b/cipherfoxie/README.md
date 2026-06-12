@@ -25,6 +25,11 @@ up, cold readings undersell it by ~35%).
   `-o extra_flags=` (empty) to load it and accept images. Verified on GB10.
 - The coding gate is deterministic (typecheck + actual rename verification,
   no LLM judging): [agent-bench](https://github.com/cipherfoxie/agent-bench).
+- Spark Arena leaderboard numbers for this model class come from the Arena's
+  own harness (short generation bursts) and land above the conservative
+  prefill-separated figure quoted here. Both are honest; they are different
+  rulers, and only same-ruler numbers should ever be compared. Background:
+  https://sovgrid.org/blog/catching-your-benchmark-lying-three-measurement-traps/
 
 Full method, raw numbers, and the three-quant comparison:
 https://sovgrid.org/blog/qwen3-35b-quant-comparison-autoround-prismaquant-fp8/
